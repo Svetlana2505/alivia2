@@ -26,17 +26,22 @@ img {
    margin: auto;
 }
 
+@media (max-width: 1399px) {
+
+    .container  {
+        width: 100%;
+    } 
+}
+
 .container-wide {
     width: 1536px;
     margin: auto;
+    padding: 0px 15px;
 }
 
 // .....header.....
 
-.wrapper {
-    width: 1920px;
-
-    .header {
+.header {
         padding: 17px 0;
         border-bottom: 1px solid #D6D6D6;
 
@@ -49,16 +54,21 @@ img {
             }
 
             .nav {
+                width: 557px;
                 margin-left: 172px;
-                transition: all 2s ease;
+                transition: color 2s ease;
 
                 ul {
                     display: flex;
+                    justify-content: space-between;
                     list-style: none;
 
-                    li+li {
-                        margin-left: 30px;
-
+                    li {
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: #292929;
+                        
                         a {
                             color: #292929;
 
@@ -84,6 +94,7 @@ img {
                     background: #01996D;
                     border-radius: 4px;
                     margin-left: 30px;
+                    cursor: pointer;
 
                     a {
                         color: #fff;
@@ -140,7 +151,6 @@ img {
                 }
             }
         }
-    }
 
     // ...step...
     .step {
@@ -481,3 +491,29 @@ img {
             }
         }
     }
+
+   @media (max-width: 1200px) and (min-width: 1100px) {
+
+    .nav {
+        margin-left: 50px;
+
+        li {
+            font-size: 20px;
+        }
+    }
+
+    .header-line-link {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 1100px) and (min-widt: 992px) {
+
+    .nav {
+        margin-left: 30px;
+    }
+    .btn {
+         margin-left: 30px;
+        width: 150px;
+     }
+}
