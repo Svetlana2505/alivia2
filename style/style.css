@@ -27,7 +27,7 @@ img {
   padding: 0px 15px; }
 
 .header {
-  padding: 17px 0;
+  padding: 16px 0;
   border-bottom: 1px solid #D6D6D6; }
   .header .header-line {
     display: flex;
@@ -101,7 +101,7 @@ img {
       line-height: 25px; }
 
 .step {
-  padding: 151px 0 51px 0; }
+  padding: 150px 0 51px 0; }
   .step .step-header {
     display: flex;
     justify-content: space-between;
@@ -306,7 +306,7 @@ img {
 
 .footer {
   background: #245852;
-  padding: 104px 0 144px; }
+  padding: 104px 0 143px; }
   .footer .footer-text .logo {
     width: 107px;
     margin-bottom: 75px; }
