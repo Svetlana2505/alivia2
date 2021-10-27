@@ -21,9 +21,6 @@ img {
   width: 1400px;
   margin: auto; }
 
-@media (max-width: 1399px) {
-  .container {
-    width: 100%; } }
 .container-wide {
   width: 1536px;
   margin: auto;
@@ -322,20 +319,126 @@ img {
     .footer .footer-text ul li + li {
       margin-top: 60px; }
 
-@media (max-width: 1200px) and (min-width: 1100px) {
-  .nav {
-    margin-left: 50px; }
-    .nav li {
-      font-size: 20px; }
+@media screen and (max-width: 1400px) {
+  .container {
+    width: 1200px; }
 
-  .header-line-link {
-    margin-left: 30px; } }
-@media (max-width: 1100px) and (min-widt: 992px) {
-  .nav {
-    margin-left: 30px; }
+  .container-wide {
+    width: 1200px; }
 
-  .btn {
-    margin-left: 30px;
-    width: 150px; } }
+  .product .product-row .product-row-wrapper .product-row-img {
+    width: 475px; }
+  .product .product-row .product-row-wrapper .card-wrapper {
+    width: 237px; }
+  .product .product-row .product-row-text h2 {
+    font-size: 42px; } }
+@media screen and (max-width: 1250px) {
+  .container {
+    width: 1000px; }
+
+  .container-wide {
+    width: 1000px; }
+
+  .header .header-line .nav {
+    margin-left: 70px; }
+    .header .header-line .nav ul li {
+      font-size: 15px; }
+  .header .header-line .header-line-link {
+    margin-left: 100px; }
+    .header .header-line .header-line-link .btn {
+      width: 100px;
+      padding: 8px 24px;
+      text-align: center;
+      margin-left: 30px; }
+      .header .header-line .header-line-link .btn a {
+        font-size: 15px; }
+
+  .home {
+    background-size: contain; }
+    .home .headline {
+      padding: 57px 0 36px 0;
+      width: 440px; }
+      .home .headline h1 {
+        font-size: 55px; }
+      .home .headline .btn-primary {
+        width: 200px; }
+
+  .step {
+    padding: 151px 0 51px 0; }
+    .step .step-header {
+      margin-bottom: 25px; }
+      .step .step-header .step-header-text {
+        max-width: 525px; }
+        .step .step-header .step-header-text p {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 157%;
+          margin-bottom: -3px; }
+        .step .step-header .step-header-text h2 {
+          font-family: 'Georgia', serif;
+          font-weight: 700;
+          font-size: 50px;
+          line-height: 157%;
+          color: #01996D; }
+      .step .step-header .step-header-subtitle {
+        max-width: 500px;
+        padding-top: 49px; }
+        .step .step-header .step-header-subtitle p {
+          font-weight: 500;
+          line-height: 150%;
+          color: #424242; }
+    .step .cards .cards-box {
+      width: 390px; }
+
+  .story {
+    background: #245852;
+    padding: 229px 0 176px; }
+    .story .story-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; }
+      .story .story-row .story-content {
+        width: 580px; }
+        .story .story-row .story-content h2 {
+          font-size: 55px; }
+        .story .story-row .story-content p {
+          margin-bottom: 20px; }
+        .story .story-row .story-content .story-row-btn {
+          margin: auto;
+          width: 240px;
+          padding: 20px;
+          background: #01996D;
+          box-sizing: border-box;
+          border-radius: 4px;
+          text-align: center;
+          margin-top: 57px;
+          cursor: pointer;
+          transition: all 2s ease; }
+          .story .story-row .story-content .story-row-btn a {
+            font: weight 400px;
+            line-height: 25px;
+            color: #FFFFFF; }
+          .story .story-row .story-content .story-row-btn:hover {
+            background: #13daa1; }
+      .story .story-row .story-video {
+        margin-top: 55px;
+        width: 596px; }
+
+  .product {
+    padding: 110px 0 85px; }
+    .product .product-row {
+      display: flex;
+      justify-content: center;
+      text-align: center; }
+      .product .product-row .product-row-text {
+        margin-top: 50px; }
+        .product .product-row .product-row-text h2 {
+          font-size: 43px; }
+
+  .footer {
+    padding: 85px 0 55px; } }
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 800px; } }
 
 /*# sourceMappingURL=style.css.map */
