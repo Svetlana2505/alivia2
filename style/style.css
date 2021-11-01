@@ -995,7 +995,7 @@ img {
     padding: 40px 0 60px; }
     .product .product-row {
       display: flex;
-      justify-content: space-between; }
+      justify-content: center; }
       .product .product-row .product-row-wrapper {
         position: relative;
         padding-left: 22px;
@@ -1027,17 +1027,17 @@ img {
               .product .product-row .product-row-wrapper .card-wrapper .card .card-content ul li + li {
                 margin-top: 5px; }
       .product .product-row .product-row-text {
-        width: 385px; }
+        width: 350px; }
         .product .product-row .product-row-text p {
           font-size: 16px;
           line-height: 120%; }
         .product .product-row .product-row-text h2 {
-          width: 385px;
+          width: 350px;
           font-size: 25px;
           line-height: 125%;
           margin: 10px 0 10px; }
         .product .product-row .product-row-text .product-row-tex {
-          width: 379px;
+          width: 350px;
           font-size: 12px;
           line-height: 16px;
           margin-bottom: 0px; }

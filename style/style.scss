@@ -1739,7 +1739,7 @@ img {
     
             .product-row {
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
     
                 .product-row-wrapper {
                     position: relative;
@@ -1800,7 +1800,7 @@ img {
                 }
     
                 .product-row-text {
-                    width: 385px;
+                    width: 350px;
     
                     p {
                         font-size: 16px;
@@ -1808,14 +1808,14 @@ img {
                     }
     
                     h2 {
-                        width: 385px;
+                        width: 350px;
                         font-size: 25px;
                         line-height: 125%;
                         margin: 10px 0 10px;
                     }
     
                     .product-row-tex {
-                        width: 379px;
+                        width: 350px;
                         font-size: 12px;
                         line-height: 16px;
                         margin-bottom: 0px;
