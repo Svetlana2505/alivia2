@@ -66,6 +66,16 @@ img {
         cursor: pointer; }
         .header .header-line .header-line-link .btn a {
           color: #fff; }
+    .header .header-line .burger {
+      display: none;
+      width: 30px;
+      margin-left: 10px; }
+      .header .header-line .burger span {
+        display: block;
+        width: 30px;
+        border-bottom: 2px solid grey; }
+        .header .header-line .burger span:nth-child(2) {
+          margin: 8px 0; }
 
 .home {
   background: url(../images/bg.jpg);
@@ -136,7 +146,8 @@ img {
     display: flex;
     justify-content: space-between; }
     .step .cards .cards-box {
-      width: 390px; }
+      width: 390px;
+      margin-right: 15px; }
       .step .cards .cards-box .heading {
         padding: 135px 0 45px 88px;
         position: relative;
@@ -205,7 +216,6 @@ img {
         .story .story-row .story-content .story-row-btn:hover {
           background: #13daa1; }
     .story .story-row .story-video {
-      width: 895px;
       position: relative; }
       .story .story-row .story-video .story-video-btn {
         width: 100px;
@@ -489,19 +499,29 @@ img {
     max-width: 960px; }
 
   .header .header-line .nav {
-    display: none; }
+    position: fixed;
+    top: 76px;
+    right: -400px;
+    width: 150px;
+    background: #fffdfd;
+    transition: 1s all linear; }
+    .header .header-line .nav ul {
+      flex-direction: column;
+      padding: 10px; }
+      .header .header-line .nav ul li {
+        border-bottom: 1px solid grey;
+        line-height: 35px; }
+  .header .header-line .nav-mob {
+    right: 0; }
+  .header .header-line .burger {
+    display: block; }
 
-  .home {
-    background: url(../images/bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; }
-    .home .headline {
-      padding: 115px 0 100px 0;
-      width: 375px; }
-      .home .headline p {
-        width: 386px;
-        margin: 15px 0 25px; }
+  .home .headline {
+    padding: 115px 0 100px 0;
+    width: 375px; }
+    .home .headline p {
+      width: 386px;
+      margin: 15px 0 25px; }
 
   .step {
     padding: 120px 0 51px 0; }
@@ -520,7 +540,8 @@ img {
       display: flex;
       justify-content: space-between; }
       .step .cards .cards-box {
-        width: 280px; }
+        width: 280px;
+        margin-right: 10px; }
         .step .cards .cards-box .heading {
           padding: 70px 0 45px 60px; }
         .step .cards .cards-box .heading::before {
@@ -553,6 +574,11 @@ img {
           line-height: 100%; }
         .story .story-row .story-content .story-row-btn {
           margin: 50px auto; }
+      .story .story-row .story-video #video {
+        width: 700px; }
+      .story .story-row .story-video .story-video-btn {
+        width: 80px;
+        height: 80px; }
 
   .product {
     padding: 164px 0 124px; }
@@ -595,11 +621,13 @@ img {
   .header {
     padding: 12px 0; }
     .header .header-line .logo {
-      width: 76px; }
+      width: 70px; }
     .header .header-line .header-line-link .btn {
-      padding: 7px 25px; }
+      padding: 0px 15px; }
       .header .header-line .header-line-link .btn a {
-        font-size: 14px; }
+        font-size: 10px; }
+    .header .header-line .burger {
+      width: 23px; }
 
   .home .headline {
     padding: 49px 0 60px;
@@ -619,7 +647,6 @@ img {
   .step {
     padding: 80px 0 51px 0; }
     .step .step-header {
-      display: flex;
       justify-content: space-between;
       margin-bottom: 52px; }
       .step .step-header .step-header-text {
@@ -643,17 +670,17 @@ img {
       display: flex;
       justify-content: space-between; }
       .step .cards .cards-box {
-        width: 220px; }
+        width: 160px; }
         .step .cards .cards-box .heading {
-          padding: 58px 0 26px 55px;
+          padding: 49px 0 25px 45px;
           font-size: 23px;
           line-height: 110%; }
         .step .cards .cards-box .heading::before {
-          font-size: 90px;
-          line-height: 100%; }
+          font-size: 75px;
+          line-height: 90%; }
         .step .cards .cards-box p {
-          font-size: 14px;
-          line-height: 160%;
+          font-size: 13px;
+          line-height: 140%;
           margin-bottom: 30px; }
       .step .cards .cards-box:nth-child(2) {
         padding-top: 90px; }
@@ -676,6 +703,11 @@ img {
         .story .story-row .story-content .story-row-btn {
           width: 200px;
           padding: 12px; }
+      .story .story-row .story-video #video {
+        width: 520px; }
+      .story .story-row .story-video .story-video-btn {
+        width: 50px;
+        height: 50px; }
 
   .product {
     padding: 100px 0 124px; }
@@ -769,27 +801,10 @@ img {
           font-size: 12px;
           line-height: 150%; }
     .step .cards {
-      flex-wrap: nowrap; }
+      flex-wrap: wrap;
+      justify-content: center; }
       .step .cards .cards-box {
-        width: 174px; }
-        .step .cards .cards-box .heading {
-          padding: 39px 0 20px 39px;
-          font-size: 20px;
-          line-height: 85%; }
-        .step .cards .cards-box .heading::before {
-          font-size: 65px;
-          line-height: 85%; }
-        .step .cards .cards-box p {
-          font-size: 11px;
-          line-height: 147%;
-          margin-bottom: 16px; }
-        .step .cards .cards-box .cards-box-img {
-          width: 161px; }
-      .step .cards .cards-box:nth-child(2) {
-        padding-top: 186px;
-        margin-left: 0px; }
-      .step .cards .cards-box:nth-child(3) {
-        padding-top: 0px; }
+        margin-right: 25px; }
 
   .story {
     padding: 70px 0 65px; }
@@ -807,86 +822,69 @@ img {
         width: 100px;
         padding: 5px;
         margin: 20px auto; }
+    .story .story-row .story-video #video {
+      width: 380px; }
     .story .story-row .story-video .story-video-btn {
-      width: 50px;
-      height: 50px; }
+      width: 36px;
+      height: 36px; }
 
   .product {
     padding: 60px 0 50px; }
     .product .product-row .product-row-wrapper {
-      padding-left: 45px;
-      padding-bottom: 45px; }
+      padding-left: 25px;
+      padding-bottom: 20px; }
       .product .product-row .product-row-wrapper .product-row-img {
-        width: 400px; }
+        width: 355px; }
       .product .product-row .product-row-wrapper .card-wrapper {
-        width: 200px; }
+        width: 160px; }
         .product .product-row .product-row-wrapper .card-wrapper .card {
           padding: 10px 6px 10px; }
           .product .product-row .product-row-wrapper .card-wrapper .card .heading {
-            font-weight: 600;
-            font-size: 12px;
-            line-height: 157%;
-            color: #000000;
-            position: relative;
-            padding-bottom: 7px;
-            margin-bottom: 12px; }
-            .product .product-row .product-row-wrapper .card-wrapper .card .heading::after {
-              content: "";
-              position: absolute;
-              background: #000;
-              height: 0.75px;
-              left: -7px;
-              right: -7px;
-              bottom: 0px; }
+            font-size: 11px;
+            margin-bottom: 8px; }
           .product .product-row .product-row-wrapper .card-wrapper .card .avatar {
-            margin-bottom: 14px; }
-            .product .product-row .product-row-wrapper .card-wrapper .card .avatar .avatar-img {
-              width: 55px;
-              height: 55px;
-              margin-bottom: 7px; }
-            .product .product-row .product-row-wrapper .card-wrapper .card .avatar p {
-              font-size: 11px;
-              line-height: 130%; }
-          .product .product-row .product-row-wrapper .card-wrapper .card .card-content p {
-            font-size: 12px;
-            line-height: 100%;
             margin-bottom: 10px; }
+            .product .product-row .product-row-wrapper .card-wrapper .card .avatar .avatar-img {
+              width: 45px;
+              height: 45px;
+              margin-bottom: 4px; }
+            .product .product-row .product-row-wrapper .card-wrapper .card .avatar p {
+              font-size: 10px;
+              line-height: 110%; }
+          .product .product-row .product-row-wrapper .card-wrapper .card .card-content p {
+            font-size: 10px;
+            line-height: 75%;
+            margin-bottom: 7px; }
           .product .product-row .product-row-wrapper .card-wrapper .card .card-content ul {
-            font-size: 10px; }
+            font-size: 9px; }
             .product .product-row .product-row-wrapper .card-wrapper .card .card-content ul li + li {
-              margin-top: 12px; }
+              margin-top: 6px; }
     .product .product-row .product-row-text {
-      width: 450px;
-      margin-top: 30px;
-      text-align: center; }
+      width: 382px;
+      margin-top: 21px; }
       .product .product-row .product-row-text p {
-        font-size: 20px;
-        line-height: 110%; }
+        font-size: 18px;
+        line-height: 100%; }
       .product .product-row .product-row-text h2 {
-        width: 450px;
-        font-size: 30px;
-        line-height: 120%;
-        margin: 5px 0 10px; }
+        width: 382px;
+        font-size: 27px;
+        line-height: 113%; }
       .product .product-row .product-row-text .product-row-tex {
-        width: 450px;
-        font-size: 14px;
-        line-height: 22px;
-        margin-bottom: 0px; }
+        width: 382px;
+        font-size: 12px;
+        line-height: 18px; }
       .product .product-row .product-row-text button {
-        width: 117px;
-        height: 40px; }
+        width: 110px;
+        height: 35px;
+        margin-top: 6px; }
 
   .footer {
-    background: #245852;
-    padding: 40px 0 30px; }
+    padding: 29px 0 20px; }
     .footer .footer-text .logo {
-      width: 60px;
+      width: 57px;
       margin-bottom: 10px; }
-    .footer .footer-text ul {
-      font-size: 16px;
-      line-height: 23px; }
-      .footer .footer-text ul li + li {
-        margin-top: 20px; } }
+    .footer .footer-text ul li + li {
+      margin-top: 24px; } }
 @media screen and (max-width: 425px) {
   a {
     font-size: 12px;
@@ -903,7 +901,9 @@ img {
     .header .header-line .logo {
       width: 55px; }
     .header .header-line .header-line-link .btn {
-      padding: 5px 12px; }
+      padding: 1px 12px; }
+    .header .burger {
+      width: 10px; }
 
   .home .headline {
     padding: 38px 0 30px 0;
@@ -925,7 +925,6 @@ img {
   .step {
     padding: 45px 0 51px 0; }
     .step .step-header {
-      display: flex;
       justify-content: space-between;
       margin-bottom: 52px; }
       .step .step-header .step-header-text {
@@ -948,7 +947,8 @@ img {
       justify-content: center;
       flex-wrap: wrap; }
       .step .cards .cards-box {
-        width: 189px; }
+        width: 150px;
+        margin-right: 9px; }
         .step .cards .cards-box .heading {
           padding: 32px 0 15px 32px;
           font-size: 15px;
@@ -960,6 +960,8 @@ img {
           font-size: 10px;
           line-height: 130%;
           margin-bottom: 10px; }
+        .step .cards .cards-box .cards-box-img {
+          width: 145px; }
       .step .cards .cards-box:nth-child(2) {
         padding-top: 26px; }
       .step .cards .cards-box:nth-child(3) {
@@ -987,63 +989,62 @@ img {
           margin-top: 11px; }
           .story .story-row .story-content .story-row-btn a {
             font-size: 10px; }
+      .story .story-row .story-video #video {
+        width: 330px; }
       .story .story-row .story-video .story-video-btn {
         width: 45px;
         height: 45px; }
 
   .product {
-    padding: 40px 0 60px; }
-    .product .product-row {
-      display: flex;
-      justify-content: center; }
-      .product .product-row .product-row-wrapper {
-        position: relative;
-        padding-left: 22px;
-        padding-bottom: 25px; }
-        .product .product-row .product-row-wrapper .product-row-img {
-          width: 325px; }
-        .product .product-row .product-row-wrapper .card-wrapper {
-          width: 140px; }
-          .product .product-row .product-row-wrapper .card-wrapper .card {
-            padding: 7px 3px 7px; }
-            .product .product-row .product-row-wrapper .card-wrapper .card .heading {
-              font-size: 11px;
-              line-height: 115%; }
-            .product .product-row .product-row-wrapper .card-wrapper .card .avatar {
-              margin-bottom: 10px; }
-              .product .product-row .product-row-wrapper .card-wrapper .card .avatar .avatar-img {
-                width: 50px;
-                height: 50px;
-                margin-bottom: 5px; }
-              .product .product-row .product-row-wrapper .card-wrapper .card .avatar p {
-                font-size: 10px;
-                line-height: 120%; }
-            .product .product-row .product-row-wrapper .card-wrapper .card .card-content p {
+    padding: 40px 0 30px; }
+    .product .product-row .product-row-wrapper {
+      padding-left: 22px;
+      padding-bottom: 25px; }
+      .product .product-row .product-row-wrapper .product-row-img {
+        width: 325px; }
+      .product .product-row .product-row-wrapper .card-wrapper {
+        width: 140px; }
+        .product .product-row .product-row-wrapper .card-wrapper .card {
+          padding: 7px 3px 7px; }
+          .product .product-row .product-row-wrapper .card-wrapper .card .heading {
+            font-size: 11px;
+            line-height: 115%; }
+          .product .product-row .product-row-wrapper .card-wrapper .card .avatar {
+            margin-bottom: 10px; }
+            .product .product-row .product-row-wrapper .card-wrapper .card .avatar .avatar-img {
+              width: 50px;
+              height: 50px;
+              margin-bottom: 5px; }
+            .product .product-row .product-row-wrapper .card-wrapper .card .avatar p {
               font-size: 10px;
-              line-height: 110%;
-              margin-bottom: 6px; }
-            .product .product-row .product-row-wrapper .card-wrapper .card .card-content ul {
-              font-size: 8px; }
-              .product .product-row .product-row-wrapper .card-wrapper .card .card-content ul li + li {
-                margin-top: 5px; }
-      .product .product-row .product-row-text {
-        width: 350px; }
-        .product .product-row .product-row-text p {
-          font-size: 16px;
-          line-height: 120%; }
-        .product .product-row .product-row-text h2 {
-          width: 350px;
-          font-size: 25px;
-          line-height: 125%;
-          margin: 10px 0 10px; }
-        .product .product-row .product-row-text .product-row-tex {
-          width: 350px;
-          font-size: 12px;
-          line-height: 16px;
-          margin-bottom: 0px; }
-        .product .product-row .product-row-text button {
-          width: 105px;
-          height: 33px; }
+              line-height: 120%; }
+          .product .product-row .product-row-wrapper .card-wrapper .card .card-content p {
+            font-size: 10px;
+            line-height: 110%;
+            margin-bottom: 6px; }
+          .product .product-row .product-row-wrapper .card-wrapper .card .card-content ul {
+            font-size: 8px; }
+            .product .product-row .product-row-wrapper .card-wrapper .card .card-content ul li + li {
+              margin-top: 5px; }
+    .product .product-row .product-row-text {
+      width: 350px; }
+      .product .product-row .product-row-text p {
+        font-size: 16px;
+        line-height: 120%; }
+      .product .product-row .product-row-text h2 {
+        width: 350px;
+        font-size: 25px;
+        line-height: 125%;
+        margin: 10px 0 10px; }
+      .product .product-row .product-row-text .product-row-tex {
+        width: 350px;
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 0px; }
+      .product .product-row .product-row-text button {
+        width: 105px;
+        height: 33px;
+        margin-top: 15px; }
 
   .footer {
     padding: 35px 0 30px; }
@@ -1055,5 +1056,41 @@ img {
       line-height: 1px; }
       .footer .footer-text ul li + li {
         margin-top: 20px; } }
+@media screen and (max-width: 375px) {
+  .header {
+    padding: 8px 0; }
+    .header .header-line .logo {
+      width: 55px; }
+    .header .header-line .header-line-link .btn {
+      padding: 3px 12px;
+      margin-left: 20px; }
+    .header .header-line .burger {
+      display: block;
+      width: 10px; }
+
+  .product {
+    padding: 40px 0 30px; }
+    .product .product-row .product-row-wrapper {
+      padding-left: 15px;
+      padding-bottom: 15px; }
+      .product .product-row .product-row-wrapper .product-row-img {
+        width: 308px; }
+      .product .product-row .product-row-wrapper .card-wrapper {
+        width: 130px; }
+        .product .product-row .product-row-wrapper .card-wrapper .card .avatar .avatar-img {
+          width: 47px;
+          height: 47px;
+          margin-bottom: 3px; }
+    .product .product-row .product-row-text {
+      width: 350px; }
+      .product .product-row .product-row-text .product-row-tex {
+        width: 265px;
+        font-size: 12px;
+        line-height: 15px;
+        margin: auto; }
+      .product .product-row .product-row-text button {
+        width: 100px;
+        height: 30px;
+        margin-top: 15px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -16,7 +16,7 @@
                 <div class="logo">
                     <img src="./images/Logo.svg" alt="Logo">
                 </div>
-                <div class="nav">
+                <div id="nav" class="nav">
                     <ul>
                         <li><a href="#">Why Alivio</a></li>
                         <li><a href="#">Solutions</a></li>
@@ -29,6 +29,11 @@
                     <div class="btn">
                         <a href="">Start Trial</a>
                     </div>
+                </div>
+                <div id="burger" class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </header>
@@ -98,8 +103,9 @@
                         </div>
                     </div>
                     <div class="story-video">
-                        <div class="story-video-btn"><img src="./images/play.svg" alt=""></div>
-                         <div class="story-video-img"><img src="./images/video.jpg" alt="video"></div>  
+                        <div id="btn" class="story-video-btn"><img src="./images/play.svg" alt=""></div>
+                         <!-- <div class="story-video-img"><img src="./images/video.jpg" alt="video"></div>   -->
+                         <video id="video" src="./video/LOBODA - Americano_mobclip.net.mp4" poster="./images/video.jpg" width="795px"></video>
                     </div>
                 </div>
             </div>
@@ -163,5 +169,7 @@
                 </ul>
             </div>
         </footer>
+
+        <script src="./main.js" ></script>
 </body>
 </html>
