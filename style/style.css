@@ -6,7 +6,8 @@ body {
   font-family: 'Lato';
   font-size: 20px;
   color: #424242;
-  font-weight: 400; }
+  font-weight: 400;
+  background-color: #fff; }
 
 a {
   text-decoration: none;
