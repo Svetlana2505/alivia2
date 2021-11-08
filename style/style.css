@@ -1077,7 +1077,8 @@ img {
           line-height: 25px; }
     .header .header-line .header-line-link .btn {
       padding: 0px 9px;
-      margin-left: 15px; }
+      margin-left: 15px;
+      display: none; }
     .header .header-line .burger {
       display: block;
       width: 25px;
