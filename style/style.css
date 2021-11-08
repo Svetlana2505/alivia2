@@ -902,7 +902,8 @@ img {
     .header .header-line .logo {
       width: 55px; }
     .header .header-line .header-line-link .btn {
-      padding: 1px 12px; }
+      padding: 1px 12px;
+      display: none; }
     .header .burger {
       width: 10px; }
 
@@ -1077,8 +1078,7 @@ img {
           line-height: 25px; }
     .header .header-line .header-line-link .btn {
       padding: 0px 9px;
-      margin-left: 15px;
-      display: none; }
+      margin-left: 15px; }
     .header .header-line .burger {
       display: block;
       width: 25px;
